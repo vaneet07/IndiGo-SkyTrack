@@ -1,0 +1,38 @@
+.flight-status {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #007BFF;
+    border-radius: 8px;
+    background-color: #e6f7ff;
+    color: #004085;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .flight-status h2 {
+    color: #007BFF;
+  }
+  
+  .flight-status ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .flight-status li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #007BFF;
+    padding-bottom: 10px;
+  }
+  
+  .flight-status li:last-child {
+    border-bottom: none;
+  }
+  
+  .flight-status p {
+    margin: 5px 0;
+  }
+  
+  .flight-status strong {
+    color: #0056b3;
+  }
+  
