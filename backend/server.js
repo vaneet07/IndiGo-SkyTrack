@@ -85,7 +85,7 @@ const notifications = [
     message: "Your flight 6E 2342 is delayed. New departure time: 2024-07-26T17:00:00Z. Departure gate: C3.",
     timestamp: new Date("2024-07-26T15:30:00Z"),
     method: "Email",
-    recipient: "gargvaneet7@google.com"
+    recipient: "email@gmail.com"
   },
   {
     notification_id: "3",
