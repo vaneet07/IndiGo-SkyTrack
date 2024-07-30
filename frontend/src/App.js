@@ -1,6 +1,7 @@
 import React from 'react';
 import FlightStatus from './components/FlightStatus';
 import Notification from './components/Notification';
+import NotificationForm from './components/NotificationForm';
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       </header>
       <FlightStatus />
       <Notification />
+      <NotificationForm />
     </div>
   );
 }

@@ -2,15 +2,31 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './FlightStatus.css';
 
-function FlightStatus() {
+// function FlightStatus() {
+//   const [flights, setFlights] = useState([]);
+
+//   useEffect(() => {
+//     axios.get('http://localhost:5000/api/flights')
+//       .then(response => setFlights(response.data))
+//       .catch(error => console.error('Error fetching flight data:', error));
+//   }, []);
+
+const FlightStatus = () => {
   const [flights, setFlights] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/flights')
-      .then(response => setFlights(response.data))
-      .catch(error => console.error('Error fetching flight data:', error));
-  }, []);
+    const fetchFlights = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/api/flights');
+        setFlights(response.data);
+      } catch (error) {
+        console.error('Error fetching flight data:', error);
+      }
+    };
 
+    fetchFlights();
+  }, []);
+  
   return (
     <div className="flight-status">
       <h2>Flight Status</h2>

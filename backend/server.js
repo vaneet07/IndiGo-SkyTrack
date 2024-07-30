@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -16,8 +17,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-// Middleware
-app.use(bodyParser.json());
+// // Middleware
+// app.use(bodyParser.json());
 
 // Routes
 app.use('/api/flights', flightRoutes);
@@ -76,7 +77,7 @@ const notifications = [
     message: "Your flight 6E 2341 is on time. Departure gate: A12.",
     timestamp: new Date("2024-07-26T13:00:00Z"),
     method: "SMS",
-    recipient: "+1234567890"
+    recipient: "+12345678905"
   },
   {
     notification_id: "2",
@@ -84,7 +85,7 @@ const notifications = [
     message: "Your flight 6E 2342 is delayed. New departure time: 2024-07-26T17:00:00Z. Departure gate: C3.",
     timestamp: new Date("2024-07-26T15:30:00Z"),
     method: "Email",
-    recipient: "gargvaneet007@google.com"
+    recipient: "gargvaneet7@google.com"
   },
   {
     notification_id: "3",
