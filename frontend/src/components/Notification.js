@@ -6,7 +6,7 @@ function Notification() {
   const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
-    axios.get('/api/notifications')
+    axios.get('http://localhost:5000/api/notifications')
       .then(response => setNotifications(response.data))
       .catch(error => console.error('Error fetching notification data:', error));
   }, []);

@@ -6,7 +6,7 @@ function FlightStatus() {
   const [flights, setFlights] = useState([]);
 
   useEffect(() => {
-    axios.get('/api/flights')
+    axios.get('http://localhost:5000/api/flights')
       .then(response => setFlights(response.data))
       .catch(error => console.error('Error fetching flight data:', error));
   }, []);
